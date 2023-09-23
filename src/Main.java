@@ -47,8 +47,9 @@ public class Main {
     private static Employee findEmployeeWithMinSalary(Employee[] employees) {
         int index = 0;
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getSalary() < employees[index].getSalary()) ;
-            index = i;
+            if (employees[i].getSalary() < employees[index].getSalary()) {
+                index = i;
+            }
         }
         return employees[index];
     }
@@ -56,8 +57,9 @@ public class Main {
     private static Employee findEmployeeWithMaxSalarySalary(Employee[] employees) {
         int index = 0;
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getSalary() > employees[index].getSalary()) ;
-            index = i;
+            if (employees[i].getSalary() > employees[index].getSalary()) {
+                index = i;
+            }
         }
         return employees [index];
     }
@@ -65,7 +67,7 @@ public class Main {
         private static double calculateAverageSalary(Employee[] employees) {
         int salarySum = calculateSalarySum(employees);
         double averageSum = (double) salarySum / employees.length;
-        return (double) averageSum;
+                return (double) averageSum;
     }
 
     private static void printFullNames(Employee[] employees) {
